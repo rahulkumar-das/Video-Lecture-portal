@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="icon" type="image/png" href="rait_logo.jpg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>   
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <style type="text/css">
+    html body{
+    	margin:0px;
+    	padding: 0px;
+    	
+    	width: 100%;
+    	overflow-x: hidden;
+        
+    }
+        #left_box{
+            float: left;
+            position: relative;
+            top: 10px;
+            margin-left: 50px;
+            border:3px #82152C solid;
+        }
+        #topbar3{
+            width: 100%;
+            height: 30px;
+            background-color:white;
+        }
+      #subject {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#subject td, #subject th {
+    border: 5px solid #ddd;
+    padding: 8px;
+}
+
+#subject tr:nth-child(even){background-color:white;}
+
+#subject tr:hover {background-color: #ddd;}
+
+#subject th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #E7E7E7;
+    color: #333333;
+}
+#subject button{
+background-color: #424244;
+font-size: 20px;
+color: white;
+    
+}
+hr{
+    background-color:#82152C;
+}
+        button{
+            cursor: pointer;
+        }
+
+</style>
+</head>
+<body>
+    <header>
+    <div id="topbar">
+         <div id="raitdashlogo">
+            <img src="raitdashlogo.jpg">
+        
+        </div>
+        <div id="manlogo">
+            <img src="man.png">
+        </div>
+        <div id="username">
+            <form>
+                <input type="text" name="username" value="fname" readonly>
+            </form>
+        </div>
+    </div>
+<div id="topbar2">
+    <div id="button_group">
+       <a href="faculty_dashboard.html"> <button>Home</button></a>
+       <a href="faculty_profile.html"> <button>Profile</button></a>
+      <a href="index.html">  <button>LogOut</button></a>
+    </div>    
+</div>
+        </header>
+<div id="left_box">
+    <p style="font-size: 25px;padding-left:15px;borde">Academic Status</p>
+  <a href="https://drive.google.com/file/d/1WanjgQVCwrosq5coIJLwiClKrLsTBvH8/view?usp=sharing">  <input type="submit" value="Syllabus" style="margin-left: 25px; position: relative; top: -20px; font-size: 20px;background-color:#424244;color:white; "></a>
+  <hr width="100%" size="5">
+  <a href="forum.html">  <input type="submit" value="Forum" style="margin-left: 25px; position: relative; top: -70px;left: 150px; font-size: 20px;background-color:#424244;color:white; "></a>
+  <hr width="100%" size="5">
+    <div id="topbar3">
+        <p style="color:blue;float: left;position: relative;top: -10px;font-weight:700;color:#82152C; margin-left: 10px;">IT-2016-A</p>
+        <p style="float:right; position: relative;top: -10px;margin-right:10px;color:#82152C; font-weight: 700 ">Semester V</p>
+    </div>
+    
+       <table id="subject">
+        <tr>
+            <th><p align="center"> Subject</p> </th>
+            <th><p align="center">Instructor</p></th>
+            <th><p align="center"> Launch</p></th>
+            <th><p align="center"> Upload</p></th>
+        </tr>
+        <tr>
+            <td>Microcontroller and Embedded Programming </td>
+            <td><pre>Deepali patil
+IT-2016-A CCR</pre></td>
+            <td><a href="mep_faculty.html"><button>Launch</button></a></td>
+            <td><a href="https://drive.google.com/drive/folders/10q8CmbQnESyM2kHBGs-Y11SyGGchverC?usp=sharing"><button>Upload</button></a></td>
+        </tr>
+        <tr>
+            <td>Internet Programming</td>
+            <td><pre>Samundiswary Srinivasan
+IT-2016-A CCR</pre></td>
+            <td><a href="ip_faculty.html"><button>Launch</button></td>
+            <td><a href="https://drive.google.com/drive/folders/1vbaMmL7O3pKbsTnfzl0JsCX9p1ZkMPk5?usp=sharing"><button>Upload</button></a></td>
+        </tr>
+        <tr>
+            <td> Cryptography and Network Security </td>
+            <td><pre>Anita Patil
+IT-2016-A CCR</pre></td>
+            <td><a href="cns_faculty.html"><button>Launch</button></td>
+            <td><a href="https://drive.google.com/open?id=1bAMSXS0RIUUKsTDBcwTZCnqZ9jyX2ooj"><button>Upload</button></a></td>
+        </tr>
+        <tr>
+            <td> Advanced Data Structures and Analysis of Algorithms</td>
+            <td><pre>Reshma Gulwani
+IT-2016-A CCR</pre></td>
+            <td><a href="adsa_faculty.html"><button>Launch</button></td>
+            <td><a href="https://drive.google.com/drive/folders/1s4GV-rgBSnJnu5BKg-oewAWwwTfENhAL?usp=sharing"><button>Upload</button></a></td>
+        </tr>
+        <tr>
+            <td>Advanced Data Management Technology</td>
+            <td><pre>Pallavi Chavan
+IT-2016-A CCR</pre></td>
+            <td><a href="admt_faculty.html"><button>Launch</button></td>
+            <td><a href="https://drive.google.com/open?id=10yjs9ExeicS_FT7nyc4cW9Zw1YoFhEJV"><button>Upload</button></td>
+        </tr>
+        
+
+
+       </table>
+</div>
+<iframe src="https://calendar.google.com/calendar/embed?src=93o6ie93t3neidbliit8l0o28s%40group.calendar.google.com&ctz=Asia%2FCalcutta" style="border: 0" width="475" height="300" frameborder="0" scrolling="no"></iframe>
+<div>
+<footer>
+    <div>
+    <h1 style="float:left;background-color:#000000;color: #424244;height: 125px;width: 100%"><pre>Education is not the learning of many facts
+but the training of the mind to think.' - Albert Einstein</pre></h1>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>

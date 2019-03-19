@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile Page</title>
+    <link rel="icon" type="image/png" href="rait_logo.jpg"/>
+</head>
+ 
+ <link rel="stylesheet" type="text/css" href="common.css">
+ <style type="text/css">
+        #image{
+        	margin:50px right;
+        	position: relative;
+        	top:95px;
+        	left:50px;
+
+             }
+             #output{
+                position: relative;
+                left: -110px;
+                top: -20px;
+                border-radius: 250px;
+                }
+              
+   
+        #topbar3{
+            width: 750px;
+            height: 30px;
+            background-color:white;
+        }
+      #subject {
+           font-family: "Trebuchet MS", Arial, Helvetica,sans-serif;
+           border-collapse: collapse;
+           width: 100%;
+
+        }
+        #topbar4{
+
+        	width:500px;
+        	height: 40px;
+        	position: relative;
+        	left:300px;
+        	top:-230px;
+        	background-color: #8D0100  ;
+        	font-style: italic;
+        	font-weight: bold;
+        	font-size: 200%;
+        	color:#FFFFFF;
+        	text-align: center;
+        	padding-left: 10px;
+        	padding-right: 10px;
+        }
+        #text{
+        	width: 200px;
+        	position: relative;
+        	left:350px; 
+        	top:-250px;
+        	font-size: 20px;
+        	
+        }
+        
+         table{
+         	width:400%;
+         }
+         #text input{
+         	font-size: 25px;
+         	border:0px;
+         }
+         table td{
+         	font-weight: 700;
+         	font-size: 25px;
+         	height: 70px;
+         }
+</style>
+<script>
+var loadFile = function(event) {
+    var image = document.getElementById('output');
+    image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+<body>
+
+      
+<div id="topbar">
+         <div id="raitdashlogo">
+            <img src="raitdashlogo.jpg">
+        
+        </div>
+        <div id="manlogo">
+            <img src="man.png">
+        </div>
+        <div id="username">
+            <form>
+                <input type="text" name="username" value="fname" readonly>
+            </form>
+        </div>
+    </div>
+    <div id="topbar2">
+    <div id="button_group">
+       <a href="student_dashboard.html"> <button>Home</button></a>
+       <a href="profile.html"> <button>Profile</button></a>
+      <a href="index.html">  <button>LogOut</button></a>
+    </div>    
+</div>
+
+	
+<div id="image">
+<form  method="post">
+
+<input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+<label for="file" style="cursor: pointer; font-weight: 700;">Upload Image</label>
+<img src="man.png" id="output" width="200" height="200" />
+</form>
+</div>
+<div id="topbar4">
+	<p >Personal/Academic Details</p>
+</div>
+<form>
+<div id="text">
+	<table>
+		<tr>
+			<td>Name:</td>
+			<td><input type="textbox" value="Komal Dhusia" readonly></td>
+		</tr>
+		<tr>
+			<td>Roll No:</td>
+			<td><input type="textbox" value="16IT1080" readonly></td>
+		</tr>
+		<tr>
+			<td>Gender:</td>
+			<td><input type="textbox" value="Female" readonly></td>
+		</tr>
+		<tr>
+			<td>Date of Birth:</td>
+			<td><input type="textbox" value="16/11/1998" readonly></td>
+		</tr>
+		<tr>
+			<td>Contact No:</td>
+			<td><input type="textbox" value="1234567890" readonly></td>
+		</tr>
+		<tr>
+			<td>Branch:</td>
+			<td><input type="textbox" value="IT" readonly></td>
+		</tr>
+		<tr>
+			<td>Division:</td>
+			<td><input type="textbox" value="A/A1" readonly></td>
+		</tr>
+		<tr>
+			<td>City:</td>
+			<td><input type="textbox" value="Mumbai" readonly></td>
+		</tr>
+		<tr>
+			<td>Country:</td>
+			<td><input type="textbox" value="India" readonly></td>
+		</tr>
+	</table>
+</div>
+</form>	
+<footer>
+    <div>
+    <h1 style="float:left;background-color:#000000;color: #424244;height: 125px;width: 100%"><pre>Education is not the learning of many facts
+but the training of the mind to think.' - Albert Einstein</pre></h1>
+        </div>
+    </footer>
+</body>
+
+</html>

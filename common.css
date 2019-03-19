@@ -1,0 +1,60 @@
+
+     html body{
+      margin:0px;
+      padding: 0px;
+      
+      width: 100%;
+      overflow-x: hidden;
+        
+    }
+  
+#topbar{
+        width: 1355px;
+        height: 100px;
+        background-color:white;
+    }
+        #raitdashlogo img{
+            
+            height: 100px;
+            width: 200px;
+        }
+        #manlogo{
+            float: right;
+            position:relative;
+            top: -75px;
+            left: -200px;
+        }
+        #manlogo img{
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+        }
+        #topbar2{
+            width: 1355px;
+        height: 50px;
+        background-color:#424244;
+        margin: 0px auto;
+        }
+        #username{
+            float: right;
+            position: relative;
+            top:-65px;
+            left: 20px;
+        }
+        #button_group button{
+            background-color: #424244;
+            color: white;
+            position: relative;
+            top: 8px;
+            left: 50px;
+            border-color: #424244;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        #button_group button:hover{
+            background-color: white;
+            color: blue;
+        }
+ button{
+            cursor: pointer;
+        }
